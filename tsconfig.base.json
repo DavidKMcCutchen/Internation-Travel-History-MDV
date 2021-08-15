@@ -14,8 +14,16 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
+    "noImplicitAny": false,
+    "strictPropertyInitialization": false,
     "paths": {
-      "@int-travel-history/api-interfaces": ["libs/api-interfaces/src/index.ts"]
+      "@int-travel-history/api-interfaces": [
+        "libs/api-interfaces/src/index.ts"
+      ],
+      "@int-travel-history/core-data": ["libs/core-data/src/index.ts"],
+      "@int-travel-history/core-state": ["libs/core-state/src/index.ts"],
+      "@int-travel-history/material": ["libs/material/src/index.ts"],
+      "@int-travel-history/ui-login": ["libs/ui-login/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

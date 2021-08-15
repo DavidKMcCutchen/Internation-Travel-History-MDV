@@ -1,0 +1,17 @@
+<div class="container">
+    <div class="col-50" layout="row" layout-align="center center">
+      <int-travel-history-trip-list
+        [trips]="allTrips$ | async"
+        (selected)="selectTrip($event)"
+        (deleted)="deleteTrip($event)"
+      ></int-travel-history-trip-list>
+    </div>
+    <div class="col-50" layout="row" layout-align="center center">
+      <int-travel-history-trip-details
+        [trip]="selectedTrip$ | async"
+        (saved)="saveTrip($event)"
+        (cancelled)="resetTrip()"
+        [form]="form"
+      ></int-travel-history-trip-details>
+    </div>
+  </div>

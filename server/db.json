@@ -1,0 +1,16 @@
+{
+  "trips": [
+    {
+      "id": 3,
+      "title": "Brazil - Porto Velho",
+      "dates": "June 4th 2021-August 4th 2021",
+      "description": "Trip to Porto Velho Rondonia.  Days spent in Sao Paulo and Cuiaba."
+    },
+    {
+      "id": 4,
+      "title": "South Korea",
+      "dates": "I forget",
+      "description": "Vacayy"
+    }
+  ]
+}

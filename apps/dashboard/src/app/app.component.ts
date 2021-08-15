@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
-import { Message } from '@int-travel-history/api-interfaces';
+
 
 @Component({
   selector: 'int-travel-history-root',
@@ -8,6 +7,9 @@ import { Message } from '@int-travel-history/api-interfaces';
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
-  hello$ = this.http.get<Message>('/api/hello');
-  constructor(private http: HttpClient) {}
+  title = 'Trips';
+  links = [
+    {path: '', icon: 'home', title: 'Home'},
+    {path: 'trips', icon: 'view_list', title: 'Trips'}
+  ]
 }

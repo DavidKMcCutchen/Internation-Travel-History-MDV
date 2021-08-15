@@ -1,0 +1,21 @@
+<mat-card>
+    <mat-card-header>
+      <mat-card-title>
+        <h1>Trips</h1>
+      </mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      <mat-list>
+        <mat-list-item *ngFor="let trip of trips" data-test="trip-list-item" (click)="selected.emit(trip)">
+          <h3 matLine>{{trip.title}}</h3>
+          <p matLine>{{trip.dates}}</p>
+          <p matLine>{{trip.description}}</p>
+          
+  
+          <button mat-icon-button (click)="deleted.emit(trip); $event.stopImmediatePropagation()">
+            <mat-icon *ngIf="!readonly">delete</mat-icon>
+          </button>
+        </mat-list-item>
+      </mat-list>
+    </mat-card-content>
+  </mat-card>
